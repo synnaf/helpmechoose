@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+  background: linear-gradient(to top, #ff8080 -31%, #ffcccc 60%);
+
+}
+
+h1 {
+  font-family: sans-serif, helvetica;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.cropImg {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.cuteDog {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+}
+
+
+.inputSection {
+  margin: 50px 0px 80px 0px;
+  width: 400px;
+}
+
+.input {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color:white;
+  font-family:helvetica;
+  border-radius:12px;
+  font-size:12px;
+  padding:5px 15px 5px 15px;
+
+}
+
+button:hover {
+    background-color: #3e8e41
+  }
+
+.addOption {
+  margin-top: 10px;
+}
+
+.go {
+  font-size: 1.5em;
+  margin-bottom: 70px;
+  width:150px;
+}
