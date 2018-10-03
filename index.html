@@ -9,13 +9,28 @@
       <h1>Problems deciding? Let me help!</h1>
       <div class="cropImg">
         <img src="https://i.ytimg.com/vi/opKg3fyqWt4/hqdefault.jpg" alt="Cute dog" class="cuteDog">
-      </div> 
+      </div>
         <div class= "inputSection">
             <div class= "input">
               <input placeholder="Write something...">
             </div>
             <button class= "addOption">Add</button>
         </div>
+          <div class= "resultSection"></div>
           <button class = "go">Woof!</button>
+
+          <!-- JAVASCRIPT -->
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+          <!-- gömmer resultsection i css + lägger till alternativ + aktiverar funktionen när man klickar på knappen Add-->
+            <script>
+            $(function() {
+              $('.resultSection').hide()
+              var add_option = function() {
+                $('.input').append('<input></input>')
+              }
+              $('.addOption').click(add_option)
+            })
+            </script>
+
   </body>
 </html>
