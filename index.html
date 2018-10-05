@@ -21,14 +21,39 @@
 
           <!-- JAVASCRIPT -->
           <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-          <!-- gömmer resultsection i css + lägger till alternativ + aktiverar funktionen när man klickar på knappen Add-->
+
             <script>
+            //gömmer resultaten genom css
             $(function() {
               $('.resultSection').hide()
+
+              //lägger till alternativ
               var add_option = function() {
                 $('.input').append('<input></input>')
               }
+
+              //aktiverar funktionen när man klickar på knappen "add"
               $('.addOption').click(add_option)
+
+              //lägger till alternativ i en lista
+              var options = []
+              var go = function() {
+                  //gömmer alternativ och visar resultat
+                  $('.inputSection').hide()
+                  $('.resultSection').css('display', 'flex')
+
+                $('input').each(function() {
+                options.push($(this).val())
+                })
+
+              //slumpar en vinnare ur listan ovan och visar den
+              var winner = options[Math.floor(Math.random() * options.length)]
+              $('.resultSection').text(winner)
+
+              }
+              //aktiverar knappen go
+              $('.go').click(go)
+
             })
             </script>
 

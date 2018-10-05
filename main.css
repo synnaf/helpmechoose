@@ -52,7 +52,7 @@ button {
 
 }
 
-  .button:hover {
+.button:hover {
     background-color: #3e8e41
   }
 
@@ -64,4 +64,16 @@ button {
   font-size: 1.5em;
   margin-bottom: 70px;
   width:150px;
+}
+
+.resultSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-family: sans-serif, helvetica;
+  margin:70px;
+  font-style: italic;
+  background-color:white;
+  padding:15px 10px 15px 10px;
 }
